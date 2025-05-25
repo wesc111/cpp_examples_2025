@@ -2,7 +2,7 @@
 # Copyright (c) 2022-2025, Werner Schoegler
 #     V0.0: initial version: 25-Oct-2022
 #     V0.1: added compile options, link options, and user definitions: 25-May-2025
-#
+#           tested on UBUNTU linux and MAC OS-X 16.5
 
 # USER definitions
 INC_DIR = -I./include -I/usr/local/include

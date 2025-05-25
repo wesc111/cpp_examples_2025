@@ -64,7 +64,7 @@ void guess_number(unsigned number)
     std::cout << "Well done.\n";
 }
 
-std::optional<int> read_number(std::istream& in)
+std::optional<u_int> read_number(std::istream& in)
 {
     int result{};
     if (in>>result) {
@@ -78,7 +78,7 @@ std::optional<int> read_number(std::istream& in)
 void guess_number_or_give_up(unsigned number)
 {
     std::cout << "Guess the number.\n>";
-    std::optional<int> guess;
+    std::optional<u_int> guess;
     while ( (guess = read_number(std::cin)) )
     {
         if (guess.value() == number) {
@@ -95,7 +95,7 @@ void guess_number_or_give_up(unsigned number)
 void guess_number_with_clues(unsigned number, std::function<std::string(int, int)> message)
 {
     std::cout << "Guess the number.\n>";
-    std::optional<int> guess;
+    std::optional<u_int> guess;
     while ( (guess = read_number(std::cin)) )
     {
         if (guess.value() == number) {

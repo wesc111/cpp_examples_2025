@@ -4,7 +4,7 @@
 #     V0.1: added compile options, link options, and user definitions: 25-May-2025
 #           tested on UBUNTU linux and MAC OS-X 16.5
 #           tested on UBUNTU under parallels
-#
+# 1234
 # USER definitions
 INC_DIR = -I./include -I/usr/local/include
 PRG_NAME = hello
